@@ -1,0 +1,63 @@
+<!--pages/home/childCpns/control-list/control-list.wxml-->
+<view
+  class="control-list-cpn"
+  hidden="{{ connectStatus === false }}"
+>
+  <view class="control-list-title">温湿度数据</view>
+  <view class="current-data">
+    <view class="current-temp">温度：{{ currentTemp }}℃</view>
+    <view class="current-humi">湿度：{{ currentHumi }}%</view>
+  </view>
+  <view class="control-group">
+    <button
+      class="control-group-btn"
+      bindtap="emitEvent"
+      data-status-code="00"
+    >-</button>
+    <view>最小温度：<text class="min-temp">{{ minTemp }}</text>℃</view>
+    <button
+      class="control-group-btn"
+      bindtap="emitEvent"
+      data-status-code="01"
+    >+</button>
+  </view>
+  <view class="control-group">
+    <button
+      class="control-group-btn"
+      bindtap="emitEvent"
+      data-status-code="10"
+    >-</button>
+    <view>最大温度：<text class="max-temp">{{ maxTemp }}</text>℃</view>
+    <button
+      class="control-group-btn"
+      bindtap="emitEvent"
+      data-status-code="11"
+    >+</button>
+  </view>
+  <view class="control-group">
+    <button
+      class="control-group-btn"
+      bindtap="emitEvent"
+      data-status-code="20"
+    >-</button>
+    <view>最小湿度：<text class="min-humi">{{ minHumi }}</text>%</view>
+    <button
+      class="control-group-btn"
+      bindtap="emitEvent"
+      data-status-code="21"
+    >+</button>
+  </view>
+  <view class="control-group">
+    <button
+      class="control-group-btn"
+      bindtap="emitEvent"
+      data-status-code="30"
+    >-</button>
+    <view>最大湿度：<text class="max-humi">{{ maxHumi }}</text>%</view>
+    <button
+      class="control-group-btn"
+      bindtap="emitEvent"
+      data-status-code="31"
+    >+</button>
+  </view>
+</view>

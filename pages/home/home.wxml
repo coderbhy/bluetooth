@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+<view class="home-page">
+  <status-btn
+    connect-status="{{ connectStatus }}"
+    bindconnect="connect"
+    binddisconnect="disconnect"
+  />
+  <control-list
+    connect-status="{{ connectStatus }}"
+    bindemitEvent="handleCode"
+    current-temp="{{ currentTemp }}"
+    current-humi="{{ currentHumi }}"
+    min-temp="{{ minTemp }}"
+    max-temp="{{ maxTemp }}"
+    min-humi="{{ minHumi }}"
+    max-humi="{{ maxHumi }}"
+  />
+</view>

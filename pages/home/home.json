@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "status-btn": "./childCpns/status-btn/status-btn",
+    "control-list": "./childCpns/control-list/control-list"
+  },
+  "navigationBarTitleText": "蓝牙温度湿度测量控制"
+}

@@ -1,0 +1,13 @@
+<!--pages/home/childCpns/status-btn/status-btn.wxml-->
+<view class="status-btn-cpn">
+  <button
+    bindtap="connect"
+    class="status-btn-item"
+    hidden="{{ connectStatus === true }}"
+  >点击连接蓝牙</button>
+  <button
+    bindtap="disconnect"
+    class="status-btn-item"
+    hidden="{{ connectStatus === false }}"
+  >点击断开蓝牙</button>
+</view>

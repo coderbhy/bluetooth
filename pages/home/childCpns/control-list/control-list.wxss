@@ -1,0 +1,53 @@
+/* pages/home/childCpns/control-list/control-list.wxss */
+.control-list-cpn {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.control-list-title {
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #1976d2;
+  color: white;
+  text-align: center;
+}
+
+.current-data {
+  display: flex;
+  text-align: center;
+}
+
+.current-temp, .current-humi {
+  width: 50%;
+  padding: 40rpx 0;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.control-group-btn {
+  width: 80rpx !important;
+  height: 80rpx !important;
+  line-height: 80rpx;
+  text-align: center;
+  color: white;
+  background: grey;
+  padding: 0;
+}
+
+.control-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.min-temp, .min-humi {
+  color: #c10015;
+  font-weight: 600;
+}
+
+.max-temp, .max-humi {
+  color: #21ba45;
+  font-weight: 600;
+}

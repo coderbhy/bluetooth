@@ -1,0 +1,12 @@
+/* pages/home/childCpns/status-btn/status-btn.wxss */
+.status-btn-cpn {
+  padding: 40rpx 0;
+}
+
+.status-btn-item {
+  color: white;
+  background: grey;
+  padding: 0;
+  height: 110rpx;
+  line-height: 110rpx;
+}
